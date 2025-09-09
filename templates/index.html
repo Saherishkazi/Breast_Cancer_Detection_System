@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>Cancer Free India</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+           <!-- App Logo -->
+                    <img class="appLogo" src="{{ url_for('static', filename='logo.png') }}" alt="">
+            
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="{{ url_for('home') }}">HOME</a></li>
+                    <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+                    <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+                    <li><a href="{{ url_for('free_test') }}"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Main Content Section -->
+            <div class="content">
+                <h1>BREAST CANCER <br><span>Detection</span><br></h1>
+                <p class="par">Let's make health our first priority. Learn more about cancer, dive into its depths.<br> Be part of this journey with <b>S&S</b><br>Consult with us, have great conversations, get the best advice, and fight cancer with us.</p>
+                <button class="cn"><a href="{{ url_for('contact') }}">JOIN US</a></button>
+            </div>
+
+            <!-- Login Form Section -->
+            <div class="form">
+                <h2>Login Here</h2>
+                <form method="POST" action="{{ url_for('login') }}">
+                    <input type="email" name="email" placeholder="Enter Email Here" required>
+                    <input type="password" name="password" placeholder="Enter Password Here" required>
+                    <button class="btnn" type="submit">Login</button>
+                </form>
+
+                <p class="link">Don't have an account? <a href="{{ url_for('signup') }}">Sign up</a> here</p>
+                <p class="liw">For more information</p>
+                
+
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/sakshi-kakade-bb92912a4/"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://wa.me/qr/JUDAN4TGUUV2G1"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    <a href="https://www.mayoclinic.org/diseases-conditions/breast-cancer/symptoms-causes/syc-20352470"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="https://www.instagram.com/_5aksh1_/"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script> -->
+
+</body>
+</html>

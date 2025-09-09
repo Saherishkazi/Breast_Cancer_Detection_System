@@ -1,0 +1,15 @@
+# Virtual environment
+.venv/
+venv/
+
+# Cache
+__pycache__/
+*.pyc
+
+# Flask session
+flask_session/
+instance/
+
+# OS files
+desktop.ini
+.DS_Store

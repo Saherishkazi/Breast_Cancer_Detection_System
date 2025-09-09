@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='signupstyle.css') }}">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+           <!-- App Logo -->
+                    <img class="appLogo" src="{{ url_for('static', filename='logo.png') }}" alt="">
+            
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="{{ url_for('home') }}">HOME</a></li>
+                    <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+                    <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+                    <li><a href="{{ url_for('free_test') }}"></a></li>
+                </ul>
+            </div>
+        </div>
+
+
+     <div class="form">
+        <h2>Sign Up </h2>
+        <form action="/signup" method="POST">
+            <input type="email" name="email" placeholder="Enter Email Here" required>
+            <input type="password" name="password" placeholder="Enter Password Here" required>
+            <button class="btnn" type="submit">Sign Up</button>
+        </form>
+
+        <p class="link">Already have an account?<br>
+        <a href="{{ url_for('home') }}">Login</a> here</p>
+     </div>
+ </div>
+</body>
+</html>

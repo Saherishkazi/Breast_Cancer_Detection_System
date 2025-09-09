@@ -1,0 +1,240 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman';
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../static/cancer_background.jpg');
+    background-size: fixed;
+    background-position: center;
+    background-repeat:repeat;
+}
+
+.main {
+    width: 100%;
+    padding: 20px;
+}
+ 
+.navbar {
+    font-family: 'Times New Roman';
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#ff4d8e;
+    padding: 0 20px;
+    margin: 0;  
+    position: fixed;  
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li {
+    margin-right: 30px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.menu ul li a:hover {
+    font-weight: bold;    
+    transition: color 0.3s ease; 
+}
+
+
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    flex: 1;
+    max-width: 60%;
+    text-align: left;
+}
+
+h1 {
+    color: rgb(18, 15, 15);
+    font-size: 3rem;
+}
+
+h1 span {
+    color: #f7f7f6;
+}
+
+.par {
+    color: rgb(12, 9, 9);
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.cn {
+    background-color: #ffa500;
+    padding: 10px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-top: 30px;
+}
+
+.cn a {
+    text-decoration: none;
+    color: rgb(14, 10, 10);
+    font-size: 18px;
+}
+
+.cn:hover {
+    background-color: #ff7f00;
+}
+
+/* Form Styles */
+.form {
+    background-color: rgba(255, 255, 255, 0.8); /* Slight background to enhance visibility */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    border-radius:solid black 10px;
+    width: 300px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.form h2 {
+    color: rgb(28, 19, 19);
+    margin-bottom: 20px;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form input[type="email"],
+.form input[type="password"] {
+    background-color: rgba(15, 11, 11, 0.8);
+    color: black;
+}
+
+.btnn {
+    padding: 10px 20px;
+    border: none;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+    width: 100%;
+}
+
+.btnn:hover {
+    background-color: #dc1967;
+}
+
+.link {
+    color: rgb(26, 19, 19);
+    margin-top: 20px;
+}
+
+.link a {
+    color: #dc1967;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        margin-top: 58px;
+        max-width: 100%;
+        margin-bottom: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form {
+        margin-left: 0;
+        width: 100%;
+        flex-direction: column;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+        margin-left: 0px;
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+
+    .form input, .btnn {
+        margin: 10px 0;
+        width: 100%;
+    }
+}
+
+/* common css for nav bar */
+.appLogo{
+    width: 23%;
+}
+
+.icon{
+    width: fit-content;
+    margin-top: 0px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    margin-right: auto;
+}

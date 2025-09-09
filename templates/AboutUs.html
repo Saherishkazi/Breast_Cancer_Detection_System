@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cancer Free India</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='AboutUsStyle.css') }}">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+         
+                    <img class="appLogo" src="{{ url_for('static', filename='logo.png') }}" alt="">
+            
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="{{ url_for('home') }}">HOME</a></li>
+                    <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+                    <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+                    <!-- <li><a href="{{ url_for('free_test') }}"></a></li> -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>Answers to your all <br><span>WHAT? WHY? WHO?</span><br>questions</h1> 
+            <br><p class="par">Breast cancer is considered the most common cancer in women worldwide with <br> 
+                approximately 30% of all female cancers (1.5 million women are diagnosed with <br> breast cancer 
+                each year, and 500,000 women die from this disease in the world). <br> Over the past 30 years, 
+                this disease has increased, while the death rate has <br> decreased. The improvement in cancer 
+                treatment is estimated at 60%.
+                <br>
+                <br>
+                We <b>THE S&S</b> are in this journey to achieve goals such as Early stage prdiction<br> and precautions.We want to make it 
+                to rural areas.To increase the awareness<br> about breast cancer and to serve the open source free platform.
+
+            </p>
+
+            <button class="cn"><a href="{{ url_for('contact') }}">JOIN US</a></button>
+
+            <div class="images">
+                <h2>Various Stages </h2>
+                <a href="sages_newnew.jpg"></a>
+            
+
+            </div>
+
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
